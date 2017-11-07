@@ -6,7 +6,7 @@ apiTwitter = twitter.Api(consumer_key="Qo46To2vlET5P5PS3KU69LDI1",
 						 access_token_secret="MefFBekMOTJGvJ6W2a64XI0znSR8tiVx1iUeVXaJw6Se2")
 
 
-query = apiTwitter.GetSearch("#ECU911", count=200)
+query = apiTwitter.GetSearch("#LOJA", count=200)
 csvDatos = csv.writer(open("twees.csv", "wb"))
 csvDatos.writerow(["Texto","Fecha","NumeroFavoritos","Idioma","Retweets","Cuenta", "Entidades"])
 i = 0
